@@ -1,0 +1,49 @@
+:root {
+  --sky-top: #0b3fb8;
+  --sky-bottom: #1e7bf0;
+  --card: #ffffff;
+  --ink: #142045;
+  --muted: #4d5a7c;
+  --gold: #ffb81c;
+  --gold-deep: #f08a00;
+  --line: #dfe5f2;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--ink);
+  background: linear-gradient(180deg, var(--sky-top), var(--sky-bottom)) fixed;
+}
+a { color: #0b56d9; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+header.top { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+header.top a { display: flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-weight: 800; font-size: 20px; }
+header.top img { width: 44px; height: 44px; border-radius: 10px; }
+nav { margin-left: auto; display: flex; gap: 16px; }
+nav a { color: #e3ecff; font-weight: 600; font-size: 15px; text-decoration: none; }
+nav a:hover { color: #fff; text-decoration: underline; }
+.hero { text-align: center; color: #fff; padding: 8px 0 28px; }
+.hero .logo { width: min(440px, 90%); height: auto; }
+.hero p.tag { font-size: 21px; font-weight: 600; margin: 8px 0 22px; }
+.badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+.badge {
+  display: inline-block; padding: 12px 22px; border-radius: 14px; font-weight: 800;
+  color: #3b2100; text-decoration: none;
+  background: linear-gradient(180deg, var(--gold), var(--gold-deep));
+  box-shadow: 0 4px 0 #b55f00;
+}
+.badge.soon { opacity: .85; cursor: default; }
+.card { background: var(--card); border-radius: 18px; padding: 24px 22px; margin-top: 18px; box-shadow: 0 10px 30px rgba(0, 20, 80, .25); }
+.card h1 { font-size: 28px; line-height: 1.2; margin: 0 0 6px; }
+.card h2 { font-size: 20px; margin: 26px 0 6px; }
+.card h2:first-child { margin-top: 0; }
+.card p, .card li { color: var(--ink); }
+.muted { color: var(--muted); font-size: 15px; }
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
+.feature { border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; }
+.feature b { display: block; margin-bottom: 2px; }
+footer { color: #d6e2ff; text-align: center; font-size: 14px; margin-top: 28px; }
+footer a { color: #fff; }
