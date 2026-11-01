@@ -36,6 +36,9 @@ nav a:hover { color: #fff; text-decoration: underline; }
   box-shadow: 0 4px 0 #b55f00;
 }
 .badge.soon { opacity: .85; cursor: default; }
+.shots { display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 48px) / 5); gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 6px; }
+.shots img { width: 100%; height: auto; border-radius: 14px; scroll-snap-align: start; box-shadow: 0 8px 22px rgba(0, 20, 80, .3); }
+@media (max-width: 600px) { .shots { grid-auto-columns: 44%; } }
 .card { background: var(--card); border-radius: 18px; padding: 24px 22px; margin-top: 18px; box-shadow: 0 10px 30px rgba(0, 20, 80, .25); }
 .card h1 { font-size: 28px; line-height: 1.2; margin: 0 0 6px; }
 .card h2 { font-size: 20px; margin: 26px 0 6px; }
